@@ -151,3 +151,6 @@ def mathquiz():
 @auth.route('/word', methods=['GET', 'POST'])
 def word():
     return render_template("word.html", user=current_user)
+@auth.route('/sciencequiz', methods=['GET', 'POST'])
+def sciencequiz():
+    return render_template("sciencequiz.html", user=current_user)
